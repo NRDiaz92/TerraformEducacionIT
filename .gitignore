@@ -1,4 +1,4 @@
-AWS/.terraform
-AWS/.terraform.lock.hcl
-AWS/terraform.tfstate.*
-AWS/terraform.tfvars
+Terraform/AWS/.terraform
+Terraform/AWS/.terraform.lock.hcl
+Terraform/AWS/terraform.tfstate.*
+Terraform/AWS/terraform.tfvars
