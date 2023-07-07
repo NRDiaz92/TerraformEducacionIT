@@ -1,4 +1,5 @@
-Terraform/AWS/.terraform
+Terraform/AWS/.terraform/
+Terraform/AWS/.terraform/*
 Terraform/AWS/.terraform.lock.hcl
 Terraform/AWS/terraform.tfstate.*
 Terraform/AWS/terraform.tfvars
