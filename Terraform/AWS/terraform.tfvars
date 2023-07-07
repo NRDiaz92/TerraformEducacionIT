@@ -1,0 +1,5 @@
+network = "172.16.0.0"
+netmask = "16"
+access_key = "AKIA4HG7MPISTFHOUUO4"
+secret_key = "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"
+region = "us-east-1"
