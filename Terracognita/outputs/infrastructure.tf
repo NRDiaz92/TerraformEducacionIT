@@ -53,7 +53,7 @@ resource "aws_instance" "adriramos_ubuntu" {
 
   instance_initiated_shutdown_behavior = "stop"
   instance_type                        = "t2.micro"
-  key_name                             = aws_key_pair.adrianramos_ssh.id
+  key_name                             = aws_key_pair.adrianramos_ssh.key_name
   metadata_options {
     http_endpoint               = "enabled"
     http_put_response_hop_limit = 1
@@ -70,7 +70,7 @@ resource "aws_instance" "adriramos_ubuntu" {
   }
 
   source_dest_check      = true
-  subnet_id              = aws_subnet.educacionit_subnet_public1_us_east_1a.id
+  subnet_id              = aws_subnet.educacionit_subnet_public3_us_east_1a.id
   tenancy                = aws_vpc.proyecto_vpc.instance_tenancy
   vpc_security_group_ids = [aws_security_group.sg_0b444a45657d0277f.id]
 }
@@ -160,7 +160,7 @@ resource "aws_instance" "daniela_ubuntu" {
   }
 
   source_dest_check      = true
-  subnet_id              = aws_subnet.educacionit_subnet_public1_us_east_1a.id
+  subnet_id              = aws_subnet.educacionit_subnet_public3_us_east_1a.id
   tenancy                = aws_vpc.proyecto_vpc.instance_tenancy
   vpc_security_group_ids = [aws_security_group.sg_0b46f8c0d47080b69.id]
 }
@@ -188,7 +188,7 @@ resource "aws_instance" "david_ubuntu" {
 
   instance_initiated_shutdown_behavior = "stop"
   instance_type                        = "t2.micro"
-  key_name                             = aws_key_pair.david_ssh.key_name
+  key_name                             = aws_key_pair.david_ssh.id
   metadata_options {
     http_endpoint               = "enabled"
     http_put_response_hop_limit = 1
@@ -205,7 +205,7 @@ resource "aws_instance" "david_ubuntu" {
   }
 
   source_dest_check      = true
-  subnet_id              = aws_subnet.educacionit_subnet_public1_us_east_1a.id
+  subnet_id              = aws_subnet.educacionit_subnet_public3_us_east_1a.id
   tenancy                = aws_vpc.proyecto_vpc.instance_tenancy
   vpc_security_group_ids = [aws_security_group.sg_0b79ead17c19d969e.id]
 }
@@ -233,7 +233,7 @@ resource "aws_instance" "gonzalo_ubuntu" {
 
   instance_initiated_shutdown_behavior = "stop"
   instance_type                        = "t2.micro"
-  key_name                             = aws_key_pair.gonzalo_ssh.key_name
+  key_name                             = aws_key_pair.gonzalo_ssh.id
   metadata_options {
     http_endpoint               = "enabled"
     http_put_response_hop_limit = 1
@@ -250,7 +250,7 @@ resource "aws_instance" "gonzalo_ubuntu" {
   }
 
   source_dest_check      = true
-  subnet_id              = aws_subnet.educacionit_subnet_public1_us_east_1a.id
+  subnet_id              = aws_subnet.educacionit_subnet_public3_us_east_1a.id
   tenancy                = aws_vpc.proyecto_vpc.instance_tenancy
   vpc_security_group_ids = [aws_security_group.sg_0d3962fe41d4dd97f.id]
 }
@@ -295,7 +295,7 @@ resource "aws_instance" "joselo_ubuntu" {
   }
 
   source_dest_check      = true
-  subnet_id              = aws_subnet.educacionit_subnet_public1_us_east_1a.id
+  subnet_id              = aws_subnet.educacionit_subnet_public3_us_east_1a.id
   tenancy                = aws_vpc.proyecto_vpc.instance_tenancy
   vpc_security_group_ids = [aws_security_group.sg_0005e0b098f814805.id]
 }
@@ -323,7 +323,7 @@ resource "aws_instance" "juan_agui_ubuntu" {
 
   instance_initiated_shutdown_behavior = "stop"
   instance_type                        = "t2.micro"
-  key_name                             = aws_key_pair.juan_agui.key_name
+  key_name                             = aws_key_pair.juan_agui.id
   metadata_options {
     http_endpoint               = "enabled"
     http_put_response_hop_limit = 1
@@ -340,7 +340,7 @@ resource "aws_instance" "juan_agui_ubuntu" {
   }
 
   source_dest_check      = true
-  subnet_id              = aws_subnet.educacionit_subnet_public1_us_east_1a.id
+  subnet_id              = aws_subnet.educacionit_subnet_public3_us_east_1a.id
   tenancy                = aws_vpc.proyecto_vpc.instance_tenancy
   vpc_security_group_ids = [aws_security_group.sg_00e6292fe59050cc1.id]
 }
@@ -385,7 +385,7 @@ resource "aws_instance" "leandro_ubuntu" {
   }
 
   source_dest_check      = true
-  subnet_id              = aws_subnet.educacionit_subnet_public1_us_east_1a.id
+  subnet_id              = aws_subnet.educacionit_subnet_public3_us_east_1a.id
   tenancy                = aws_vpc.proyecto_vpc.instance_tenancy
   vpc_security_group_ids = [aws_security_group.sg_04bccb1f03e81f1b1.id]
 }
@@ -430,7 +430,7 @@ resource "aws_instance" "lsobrino_ubuntu" {
   }
 
   source_dest_check      = true
-  subnet_id              = aws_subnet.educacionit_subnet_public1_us_east_1a.id
+  subnet_id              = aws_subnet.educacionit_subnet_public3_us_east_1a.id
   tenancy                = aws_vpc.proyecto_vpc.instance_tenancy
   vpc_security_group_ids = [aws_security_group.sg_0bf6cb5d24617ff76.id]
 }
@@ -475,7 +475,7 @@ resource "aws_instance" "luis_ubuntu" {
   }
 
   source_dest_check      = true
-  subnet_id              = aws_subnet.educacionit_subnet_public1_us_east_1a.id
+  subnet_id              = aws_subnet.educacionit_subnet_public3_us_east_1a.id
   tenancy                = aws_vpc.proyecto_vpc.instance_tenancy
   vpc_security_group_ids = [aws_security_group.sg_01ae75002f8932aee.id]
 }
@@ -520,7 +520,7 @@ resource "aws_instance" "marco_ubunto" {
   }
 
   source_dest_check      = true
-  subnet_id              = aws_subnet.educacionit_subnet_public1_us_east_1a.id
+  subnet_id              = aws_subnet.educacionit_subnet_public3_us_east_1a.id
   tenancy                = aws_vpc.proyecto_vpc.instance_tenancy
   vpc_security_group_ids = [aws_security_group.sg_06e9b86e6082ad75d.id]
 }
@@ -548,7 +548,7 @@ resource "aws_instance" "nicolas_ubuntu" {
 
   instance_initiated_shutdown_behavior = "stop"
   instance_type                        = "t2.micro"
-  key_name                             = aws_key_pair.nicolas_ssh.id
+  key_name                             = aws_key_pair.nicolas_ssh.key_name
   metadata_options {
     http_endpoint               = "enabled"
     http_put_response_hop_limit = 1
@@ -565,9 +565,59 @@ resource "aws_instance" "nicolas_ubuntu" {
   }
 
   source_dest_check      = true
-  subnet_id              = aws_subnet.educacionit_subnet_public1_us_east_1a.id
+  subnet_id              = aws_subnet.educacionit_subnet_public3_us_east_1a.id
   tenancy                = aws_vpc.proyecto_vpc.instance_tenancy
   vpc_security_group_ids = [aws_security_group.sg_0a8cb6cc8448f857a.id]
+}
+
+resource "aws_instance" "sebastian_ubuntu" {
+  tags = {
+    Name = "sebastian-ubuntu"
+  }
+
+  tags_all = {
+    Name = "sebastian-ubuntu"
+  }
+
+  ami               = "ami-053b0d53c279acc90"
+  availability_zone = "us-east-1a"
+  capacity_reservation_specification {
+    capacity_reservation_preference = "open"
+  }
+
+  cpu_core_count       = 1
+  cpu_threads_per_core = 1
+  credit_specification {
+    cpu_credits = "standard"
+  }
+
+  instance_initiated_shutdown_behavior = "stop"
+  instance_type                        = "t2.micro"
+  key_name                             = aws_key_pair.sebastian_ssh.id
+  metadata_options {
+    http_endpoint               = "enabled"
+    http_put_response_hop_limit = 1
+    http_tokens                 = "optional"
+    instance_metadata_tags      = "disabled"
+  }
+
+  private_ip = "172.16.3.185"
+  root_block_device {
+    delete_on_termination = true
+    iops                  = 100
+    volume_size           = 8
+    volume_type           = "gp2"
+  }
+
+  source_dest_check      = true
+  subnet_id              = aws_subnet.educacionit_subnet_public3_us_east_1a.id
+  tenancy                = aws_vpc.proyecto_vpc.instance_tenancy
+  vpc_security_group_ids = [aws_security_group.sg_0b3b7b67cc242a250.id]
+}
+
+resource "aws_key_pair" "FWeyZ" {
+  key_name   = "Leandro-ssh"
+  public_key = ""
 }
 
 resource "aws_key_pair" "adrianramos_ssh" {
@@ -655,11 +705,6 @@ resource "aws_key_pair" "nicolas_ssh" {
   public_key = ""
 }
 
-resource "aws_key_pair" "ofOMv" {
-  key_name   = "Leandro-ssh"
-  public_key = ""
-}
-
 resource "aws_key_pair" "sebastian_ssh" {
   key_name   = "sebastian-ssh"
   public_key = ""
@@ -697,6 +742,16 @@ resource "aws_db_subnet_group" "rds" {
   description = "RDS"
   name        = "rds"
   subnet_ids  = [aws_subnet.private_subnet_01.id, aws_subnet.private_subnet_02.id]
+}
+
+resource "aws_iam_access_key" "akia4hg7mpisqnkpp7vk" {
+  status = "Active"
+  user   = aws_iam_user.pruebaterraform.name
+}
+
+resource "aws_iam_access_key" "akia4hg7mpistfhouuo4" {
+  status = "Active"
+  user   = aws_iam_user.pruebaterraform.name
 }
 
 resource "aws_iam_policy" "arn_aws_iam__840134588965_policy_createlinkedrole" {
@@ -806,7 +861,7 @@ resource "aws_iam_role_policy_attachment" "awsserviceroleforrds_arn_aws_iam__aws
 
 resource "aws_iam_role_policy_attachment" "awsserviceroleforsupport_arn_aws_iam__aws_policy_aws_service_role_awssupportservicerolepolicy" {
   policy_arn = "arn:aws:iam::aws:policy/aws-service-role/AWSSupportServiceRolePolicy"
-  role       = aws_iam_role.awsserviceroleforsupport.id
+  role       = aws_iam_role.awsserviceroleforsupport.name
 }
 
 resource "aws_iam_role_policy_attachment" "awsservicerolefortrustedadvisor_arn_aws_iam__aws_policy_aws_service_role_awstrustedadvisorservicerolepolicy" {
@@ -820,9 +875,19 @@ resource "aws_iam_user" "educacionit" {
   permissions_boundary = "arn:aws:iam::aws:policy/AdministratorAccess"
 }
 
+resource "aws_iam_user" "pruebaterraform" {
+  name = "PruebaTerraform"
+  path = aws_iam_policy.arn_aws_iam__840134588965_policy_createlinkedrole.path
+}
+
 resource "aws_iam_user_policy_attachment" "educacionit_arn_aws_iam__aws_policy_administratoraccess" {
   policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
   user       = aws_iam_user.educacionit.name
+}
+
+resource "aws_iam_user_policy_attachment" "pruebaterraform_arn_aws_iam__aws_policy_administratoraccess" {
+  policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
+  user       = aws_iam_user.pruebaterraform.name
 }
 
 resource "aws_internet_gateway" "educacionit_igw" {
@@ -878,7 +943,7 @@ resource "aws_nat_gateway" "educacionit_nat_public1_us_east_1a" {
 
   allocation_id     = "eipalloc-090762e42cefc0196"
   connectivity_type = "public"
-  subnet_id         = aws_subnet.educacionit_subnet_public1_us_east_1a.id
+  subnet_id         = aws_subnet.educacionit_subnet_public3_us_east_1a.id
 }
 
 resource "aws_route_table" "educacionit_rtb_private" {
@@ -1355,6 +1420,40 @@ resource "aws_security_group" "sg_0a8cb6cc8448f857a" {
   vpc_id = aws_vpc.educacionit_vpc.id
 }
 
+resource "aws_security_group" "sg_0b3b7b67cc242a250" {
+  description = "launch-wizard-5 created 2023-06-28T23:07:14.201Z"
+  egress {
+    cidr_blocks = ["0.0.0.0/0"]
+    from_port   = 0
+    protocol    = "-1"
+    to_port     = 0
+  }
+
+  ingress {
+    cidr_blocks = ["152.168.229.143/32"]
+    from_port   = 443
+    protocol    = "tcp"
+    to_port     = 443
+  }
+
+  ingress {
+    cidr_blocks = ["152.168.229.143/32"]
+    from_port   = 80
+    protocol    = "tcp"
+    to_port     = 80
+  }
+
+  ingress {
+    cidr_blocks = ["152.168.229.143/32"]
+    from_port   = 22
+    protocol    = "tcp"
+    to_port     = 22
+  }
+
+  name   = "launch-wizard-sebas"
+  vpc_id = aws_vpc.educacionit_vpc.id
+}
+
 resource "aws_security_group" "sg_0b444a45657d0277f" {
   description = "AdriRamos-SG"
   egress {
@@ -1553,8 +1652,8 @@ resource "aws_security_group" "sg_0d3fd7c7550f75425" {
     to_port   = 0
   }
 
-  name   = "default"
-  vpc_id = aws_vpc.proyecto_vpc.id
+  name   = aws_vpc.proyecto_vpc.instance_tenancy
+  vpc_id = "vpc-04e738f81f123d46f"
 }
 
 resource "aws_security_group" "sg_0ea98d5ea2d8d56a1" {
@@ -1613,68 +1712,136 @@ resource "aws_security_group" "sg_0fb2dc8b70c3bc79d" {
 
 resource "aws_subnet" "educacionit_subnet_private1_us_east_1a" {
   tags = {
-    Clase = "4"
+    Clase = "6"
     Name  = "EducacionIT-subnet-private1-us-east-1a"
   }
 
   tags_all = {
-    Clase = "4"
+    Clase = "6"
     Name  = "EducacionIT-subnet-private1-us-east-1a"
   }
 
-  availability_zone                   = "us-east-1a"
-  cidr_block                          = "172.16.128.0/20"
+  availability_zone_id                = "use1-az6"
+  cidr_block                          = "172.16.192.0/20"
   private_dns_hostname_type_on_launch = "ip-name"
   vpc_id                              = aws_vpc.educacionit_vpc.id
 }
 
 resource "aws_subnet" "educacionit_subnet_private2_us_east_1b" {
   tags = {
-    Clase = "4"
+    Clase = "6"
     Name  = "EducacionIT-subnet-private2-us-east-1b"
   }
 
   tags_all = {
-    Clase = "4"
+    Clase = "6"
     Name  = "EducacionIT-subnet-private2-us-east-1b"
   }
 
   availability_zone_id                = "use1-az1"
-  cidr_block                          = "172.16.144.0/20"
+  cidr_block                          = "172.16.208.0/20"
+  private_dns_hostname_type_on_launch = "ip-name"
+  vpc_id                              = aws_vpc.educacionit_vpc.id
+}
+
+resource "aws_subnet" "educacionit_subnet_private3_us_east_1a" {
+  tags = {
+    Clase = "6"
+    Name  = "EducacionIT-subnet-private3-us-east-1a"
+  }
+
+  tags_all = {
+    Clase = "6"
+    Name  = "EducacionIT-subnet-private3-us-east-1a"
+  }
+
+  availability_zone_id                = "use1-az6"
+  cidr_block                          = "172.16.240.0/20"
+  private_dns_hostname_type_on_launch = "ip-name"
+  vpc_id                              = aws_vpc.educacionit_vpc.id
+}
+
+resource "aws_subnet" "educacionit_subnet_private4_us_east_1b" {
+  tags = {
+    Clase = "6"
+    Name  = "EducacionIT-subnet-private4-us-east-1b"
+  }
+
+  tags_all = {
+    Clase = "6"
+    Name  = "EducacionIT-subnet-private4-us-east-1b"
+  }
+
+  availability_zone_id                = "use1-az1"
+  cidr_block                          = "172.16.224.0/20"
   private_dns_hostname_type_on_launch = "ip-name"
   vpc_id                              = aws_vpc.educacionit_vpc.id
 }
 
 resource "aws_subnet" "educacionit_subnet_public1_us_east_1a" {
   tags = {
-    Clase = "4"
+    Clase = "6"
     Name  = "EducacionIT-subnet-public1-us-east-1a"
   }
 
   tags_all = {
-    Clase = "4"
+    Clase = "6"
     Name  = "EducacionIT-subnet-public1-us-east-1a"
   }
 
-  availability_zone                   = "us-east-1a"
-  cidr_block                          = "172.16.0.0/20"
+  availability_zone_id                = "use1-az6"
+  cidr_block                          = "172.16.16.0/20"
   private_dns_hostname_type_on_launch = "ip-name"
   vpc_id                              = aws_vpc.educacionit_vpc.id
 }
 
 resource "aws_subnet" "educacionit_subnet_public2_us_east_1b" {
   tags = {
-    Clase = "4"
+    Clase = "6"
     Name  = "EducacionIT-subnet-public2-us-east-1b"
   }
 
   tags_all = {
-    Clase = "4"
+    Clase = "6"
     Name  = "EducacionIT-subnet-public2-us-east-1b"
   }
 
-  availability_zone                   = "us-east-1b"
-  cidr_block                          = "172.16.16.0/20"
+  availability_zone_id                = "use1-az1"
+  cidr_block                          = "172.16.32.0/20"
+  private_dns_hostname_type_on_launch = "ip-name"
+  vpc_id                              = aws_vpc.educacionit_vpc.id
+}
+
+resource "aws_subnet" "educacionit_subnet_public3_us_east_1a" {
+  tags = {
+    Clase = "6"
+    Name  = "EducacionIT-subnet-public3-us-east-1a"
+  }
+
+  tags_all = {
+    Clase = "6"
+    Name  = "EducacionIT-subnet-public3-us-east-1a"
+  }
+
+  availability_zone_id                = "use1-az6"
+  cidr_block                          = "172.16.0.0/20"
+  private_dns_hostname_type_on_launch = "ip-name"
+  vpc_id                              = aws_vpc.educacionit_vpc.id
+}
+
+resource "aws_subnet" "educacionit_subnet_public4_us_east_1b" {
+  tags = {
+    Clase = "6"
+    Name  = "EducacionIT-subnet-public4-us-east-1b"
+  }
+
+  tags_all = {
+    Clase = "6"
+    Name  = "EducacionIT-subnet-public4-us-east-1b"
+  }
+
+  availability_zone_id                = "use1-az1"
+  cidr_block                          = "172.16.48.0/20"
   private_dns_hostname_type_on_launch = "ip-name"
   vpc_id                              = aws_vpc.educacionit_vpc.id
 }
@@ -1688,7 +1855,7 @@ resource "aws_subnet" "private_subnet_01" {
     Name = "Private_Subnet-01"
   }
 
-  availability_zone                   = "us-east-1c"
+  availability_zone_id                = "use1-az2"
   cidr_block                          = "172.36.1.0/24"
   private_dns_hostname_type_on_launch = "ip-name"
   vpc_id                              = aws_vpc.pupos_vpc.id
